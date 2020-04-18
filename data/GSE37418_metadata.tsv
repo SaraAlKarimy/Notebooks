@@ -1,0 +1,77 @@
+sample	group	age	sex	ethnic	stage
+GSM918578	G4	8.3	Male	White	stMB-CL
+GSM918579	G4	8.3	Male	Black	stMB-CL
+GSM918580	WNT	6.5	Female	White	stMB-CL
+GSM918581	G4	9.2	Male	White	stMB-CL
+GSM918582	SHH	8.5	Male	Asian	stMB-DN
+GSM918583	G4	8.1	Female	White	stMB-CL
+GSM918584	G4	8.7	Male	White	stMB-CL
+GSM918585	G4	9	Female	White	stMB-CL
+GSM918586	G3	10.8	Male	White	stMB-AN
+GSM918587	G3	9.7	Male	other	stMB-CL
+GSM918588	G3	4.9	Male	White	stMB-CL
+GSM918589	G3	5.2	Male	Hispanic	stMB-CL
+GSM918590	G4	8.8	Male	Hispanic	stMB-AN
+GSM918591	G4	9.3	Male	White	stMB-CL
+GSM918592	G4	14.7	Male	Hispanic	stMB-CL
+GSM918593	WNT	9.1	Female	White	stMB-CL
+GSM918594	G3	4.7	Male	White	stMB-AN
+GSM918595	G4	7.8	Female	Asian Indian	stMB-CL
+GSM918596	G4	3.3	Female	White	stMB-CL
+GSM918597	G4	5.4	Male	White	stMB-CL
+GSM918598	G4	11.8	Male	White	stMB-CL
+GSM918599	G4	6.8	Male	Hispanic	stMB-CL
+GSM918600	G3	12.9	Male	White	stMB-AN
+GSM918601	G3	3.3	Male	White	stMB-AN
+GSM918602	G4	13.4	Female	Hispanic	stMB-CL
+GSM918603	WNT	11.6	Male	White	stMB-CL
+GSM918604	G4	3.7	Male	White	stMB-CL
+GSM918605	G4	5	Male	White	stMB-CL
+GSM918606	SHH	16.1	Female	White	stMB-DN
+GSM918607	SHH	10	Female	Asian Indian	stMB-AN
+GSM918608	SHH	3.2	Female	Asian	stMB-CL
+GSM918609	SHH	8.6	Female	White	stMB-AN
+GSM918610	G4	11.8	Male	White	stMB-AN
+GSM918611	G3	8.6	Male	White	stMB-CL
+GSM918612	G3	3.2	Male	Hispanic	stMB-AN
+GSM918613	G4	4.3	Male	White	stMB-CL
+GSM918614	G3	6.9	Male	Hispanic	stMB-AN
+GSM918615	G4	6.2	Male	Hispanic	stMB-AN
+GSM918616	G4	11.6	Male	White	stMB-AN
+GSM918617	G4	12.9	Female	Asian	stMB-CL
+GSM918618	U	10.8	Male	White	stMB-Myo
+GSM918619	SHH	16.7	Male	White	stMB-CL
+GSM918620	SHH	7	Female	Asian	stMB-DN
+GSM918621	SHH	8.8	Male	Hispanic	stMB-CL
+GSM918622	G4	6.8	Female	Black	stMB-AN
+GSM918623	G4	8.7	Male	White	stMB-CL
+GSM918624	G3	5.2	Male	Hispanic	stMB-CL
+GSM918625	WNT	9.2	Female	Pacific Islander	stMB-CL
+GSM918626	G4	6.3	Male	Hispanic	stMB-CL
+GSM918627	G4	6.9	Male	White	stMB-CL
+GSM918628	SHH OUTLIER	8.3	Male	Black	stMB-DN
+GSM918629	G3	13.6	Male	White	stMB-AN
+GSM918630	G4	6.3	Female	Black	stMB-CL
+GSM918631	G4	5.8	Female	Asian Indian	stMB-CL
+GSM918632	G4	9.2	Male	White	stMB-AN
+GSM918633	G4	8.7	Male	White	stMB-CL
+GSM918634	G4	8.2	Male	White	stMB-CL
+GSM918635	G4	5.8	Male	Asian Indian	stMB-CL
+GSM918636	G3	7.1	Female	other	stMB-AN
+GSM918637	G3	3.9	Male	Asian	stMB-CL
+GSM918638	WNT	8.2	Female	Hispanic	stMB-CL
+GSM918639	G3	5	Male	White	stMB-CL
+GSM918640	G3	10.3	Male	White	stMB-CL
+GSM918641	WNT	8.4	Male	White	stMB-CL
+GSM918642	WNT	8.4	Female	other	stMB-CL
+GSM918643	WNT	8.3	Female	Asian	stMB-CL
+GSM918644	U	9.1	Female	Asian	stMB-Myo
+GSM918645	G4	6.9	Male	White	stMB-CL
+GSM918646	G4	9.8	Male	White	stMB-CL
+GSM918647	G4	11.7	Male	White	stMB-AN
+GSM918648	G4	12.1	Male	White	stMB-CL
+GSM918649	SHH	4.1	Male	White	stMB-DN
+GSM918650	G4	12.2	Male	White	stMB-CL
+GSM918651	SHH	5.1	Male	White	stMB-DN
+GSM918652	G4	10.8	Male	Hispanic	stMB-CL
+GSM918653	G4	5.8	Male	Black	stMB-CL
