@@ -1,0 +1,1 @@
+This data set contains the crude estimates of overweight among adults by country in 2016 from the World Health Organization's Global Health Observatory data repository risk factor Overweight / Obesity. Overweight here is defined as BMI ≥ 25. Data obtained from https://www.kaggle.com/arttua/who-overweight-by-country-2016
