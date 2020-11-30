@@ -1,0 +1,9 @@
+Column	Description
+sex	Sex: F = female, M = male
+age	Age in years
+chol	Serum total cholesterol, mg/dl
+BMI	Body-mass index, kg/m2
+TG	Serum triglycerides, mg/dl
+rs174548	Candidate SNP
+HTN	diagnosis of hypertension: N, Y
+CHD	diagnosis of coronary heart disease: N, Y
