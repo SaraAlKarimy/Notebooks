@@ -3,19 +3,19 @@ Microarray Gene Expression Analysis with R
 
 ![](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/images/title.png "Microarry Analysis with R")
 
-## Objectives
+# Objectives
 
 -   Load microarray dataset into R
 -   Explore the dataset with basic visualizations
 -   Identify differentially expressed genes (DEGs)
 -   Generate annotation of the DEGs (*Tentative*)
 
-## The Central Dogma of Biology
+# The Central Dogma of Biology
 
 ![DNA makes RNA and RNA makes
 protein](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/images/dogma.png "The Central Dogma of Biology")
 
-## Cleft Lip and Palate
+# Cleft Lip and Palate
 
 Cleft lip and cleft palate (**CLP**) are splits in the upper lip, the
 roof of the mouth (palate) or both. They result when facial structures
@@ -26,7 +26,7 @@ births.
 ![Cleft lip and
 palate](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/images/cleft.jpg)
 
-### Callgenes
+## Challgenes
 
 Children with cleft lip with or without cleft palate face a variety of
 challenges, depending on the type and severity of the cleft.
@@ -47,7 +47,7 @@ challenges, depending on the type and severity of the cleft.
 *Reference*: [Mayo Foundation for Medical Education and
 Research](https://www.mayoclinic.org/diseases-conditions/cleft-palate/symptoms-causes/syc-20370985)
 
-### Genetics
+## Genetics
 
 -   DNA variation in Interferon Regulatory Factor 6 (**IRF6**) causes
     Van der Woude syndrome (**VWS**)
@@ -63,7 +63,7 @@ Research](https://www.mayoclinic.org/diseases-conditions/cleft-palate/symptoms-c
 *Reference*: [Hum Mol Genet. 2014 May 15; 23(10):
 2711–2720](http://doi.org/10.1093/hmg/ddt664)
 
-### Question
+## Question
 
 Given:
 
@@ -75,7 +75,7 @@ Given:
 How can we identify other genes that might be involved in the remaining
 30% of the VWS families?
 
-### Hint
+## Hint
 
 -   Usually, genes that are regulated by a transcription factor belong
     to the same biological process or pathway.
@@ -87,11 +87,11 @@ How can we identify other genes that might be involved in the remaining
 
 ## Hypothesis
 
--   $ H\_O : *{WT} = *{KO} $
+-   *H*<sub>*O*</sub> : *μ*<sub>*W**T*</sub> = *μ*<sub>*K**O*</sub>
 
--   $ H\_A : *{WT} *{KO} $
+-   *H*<sub>*A*</sub> : *μ*<sub>*W**T*</sub> ≠ *μ*<sub>*K**O*</sub>
 
--   Where $ $ is the *mean* of the gene expression values of a gene.
+-   Where *μ* is the *mean* of the gene expression values of a gene.
 
 -   **One**-sided or **Two**-sided testing?
 
@@ -100,8 +100,6 @@ How can we identify other genes that might be involved in the remaining
 ## Why Microarray?
 
 ![](images/one-does-not-simply.jpg)
-
-## Why Microarray?
 
 -   No need for candidate genes (or genes of interest)
 
@@ -139,3 +137,7 @@ How can we identify other genes that might be involved in the remaining
 | 1415671\_at | 11486.3 | 10542.7 | 10641.4 | 10408.2 |  9484.5 |  7650.2 |
 | 1415672\_at | 14339.2 | 13526.1 | 14444.7 | 12936.6 | 13841.7 | 13285.7 |
 | 1415673\_at |  3156.8 |  2219.5 |  3264.4 |  2374.2 |  2201.8 |  2525.3 |
+
+## Analysis
+
+![The analysis notebook]()
