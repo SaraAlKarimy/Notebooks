@@ -140,4 +140,5 @@ How can we identify other genes that might be involved in the remaining
 
 ## Analysis
 
-![The analysis notebook]()
+[The analysis
+notebook](https://github.com/ahmedmoustafa/Notebooks/blob/master/Irf6/Irf6.md)
