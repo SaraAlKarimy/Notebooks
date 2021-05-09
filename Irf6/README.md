@@ -132,3 +132,10 @@ How can we identify other genes that might be involved in the remaining
 
 -   The original dataset can be obtained from NCBI GEO with accession
     [GSE5800](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE5800)
+
+| ID          |     KO1 |     KO2 |     KO3 |     WT1 |     WT2 |     WT3 |
+|:------------|--------:|--------:|--------:|--------:|--------:|--------:|
+| 1415670\_at |  6531.0 |  5562.8 |  6822.4 |  7732.1 |  7191.2 |  7551.9 |
+| 1415671\_at | 11486.3 | 10542.7 | 10641.4 | 10408.2 |  9484.5 |  7650.2 |
+| 1415672\_at | 14339.2 | 13526.1 | 14444.7 | 12936.6 | 13841.7 | 13285.7 |
+| 1415673\_at |  3156.8 |  2219.5 |  3264.4 |  2374.2 |  2201.8 |  2525.3 |
