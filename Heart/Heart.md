@@ -50,7 +50,7 @@ library(tidyverse)
 Let’s load dataset into a table and explore the dataset
 
 ``` r
-heart = read_tsv("https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/heart.tsv") %>% rename(diagnosis = condition)
+heart = read_tsv("https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Heart/Heart.tsv")
 ```
 
     ## 
@@ -70,7 +70,7 @@ heart = read_tsv("https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/mast
     ##   slope = col_double(),
     ##   ca = col_double(),
     ##   thal = col_double(),
-    ##   condition = col_double()
+    ##   diagnosis = col_double()
     ## )
 
 ``` r
@@ -285,8 +285,9 @@ ggplot (t2) +
   geom_point(aes (x = PC1, y = PC2, color = diagnosis), size = 5, alpha = 0.8)
 ```
 
-![](Heart_files/figure-gfm/unnamed-chunk-11-1.png)<!-- --> The above
-figure shows that based on the 13 parameters, there are two
+![](Heart_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+
+The above figure shows that based on the 13 parameters, there are two
 sub-populations within the study subjects, **with heart diseases** in
 blue towards the positive side of PC1 and **without heart disease** in
 red towards the negative side of PC1.
@@ -339,10 +340,11 @@ ggplot(loadings) +
   geom_bar(aes(x = reorder (parameter, PC1, FUN = sum), y = PC1), stat = "identity")
 ```
 
-![](Heart_files/figure-gfm/unnamed-chunk-14-1.png)<!-- --> The above
-figure tells us that `oldpeak` ([ST depression induced by exercise
-relative to rest](https://en.wikipedia.org/wiki/ST_depression)) is the
-largest contributor to PC1 on the negative side. At the same time
+![](Heart_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+
+The above figure tells us that `oldpeak` ([ST depression induced by
+exercise relative to rest](https://en.wikipedia.org/wiki/ST_depression))
+is the largest contributor to PC1 on the negative side. At the same time
 `thalach` ([maximum heart rate
 achieved](https://www.cdc.gov/physicalactivity/basics/measuring/heartrate.htm))
 is the largest contributor on the positive side PC1.
@@ -425,7 +427,7 @@ No too bad :wink:
 
 ## Summary
 
--   We started with PCA to **explore**
+-   We started with PCA to explore
 -   PCA showed that there were sub-populations among the subjects
 -   The separation between the two sub-populations was due to PC1
 -   PCA indicated that `oldpeak` was a major contributor to PC1
