@@ -1,4 +1,4 @@
-PCA of the Heart
+PCA of the Heart :hearts:
 ================
 
 ![Heart](images/cardiogram.jpeg)

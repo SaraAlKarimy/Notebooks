@@ -1,5 +1,5 @@
 ---
-title: "PCA of the Heart"
+title: "PCA of the Heart :hearts:"
 subtitle: "Example for using PCA"
 output: github_document
 ---
