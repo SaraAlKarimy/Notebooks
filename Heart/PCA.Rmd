@@ -186,7 +186,7 @@ No too bad :wink:
 
 ## Summary
 
-- We started with PCA to explore
+- We explored the heart dataset using PCA
 - PCA showed that there were sub-populations among the subjects
 - The separation between the two sub-populations was due to PC1
 - PCA indicated that `oldpeak` was a major contributor to PC1

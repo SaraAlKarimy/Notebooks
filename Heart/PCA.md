@@ -206,7 +206,7 @@ they explain about 33% of the variance.
 plot(pca)
 ```
 
-![](Heart_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](PCA_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 ## Investigating the PCA Result
 
@@ -285,7 +285,7 @@ ggplot (t2) +
   geom_point(aes (x = PC1, y = PC2, color = diagnosis), size = 5, alpha = 0.8)
 ```
 
-![](Heart_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](PCA_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 The above figure shows that based on the 13 parameters, there are two
 sub-populations within the study subjects, **with heart diseases** in
@@ -331,7 +331,7 @@ ggplot(loadings) +
   geom_bar(aes(x = parameter, y = PC1), stat = "identity")
 ```
 
-![](Heart_files/figure-gfm/unnamed-chunk-13-1.png)<!-- --> It will be
+![](PCA_files/figure-gfm/unnamed-chunk-13-1.png)<!-- --> It will be
 helpful to rearrange the bars (parameters) on the x-axis according to
 the values of the loadings on the y-axis
 
@@ -340,7 +340,7 @@ ggplot(loadings) +
   geom_bar(aes(x = reorder (parameter, PC1, FUN = sum), y = PC1), stat = "identity")
 ```
 
-![](Heart_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](PCA_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 The above figure tells us that `oldpeak` ([ST depression induced by
 exercise relative to rest](https://en.wikipedia.org/wiki/ST_depression))
@@ -419,7 +419,7 @@ ggplot () +
   geom_point(data = t3, aes (x = PC1, y = PC2, color = diagnosis), size = 5, alpha = 0.9)
 ```
 
-![](Heart_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](PCA_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 No too bad :wink:
 
@@ -427,7 +427,7 @@ No too bad :wink:
 
 ## Summary
 
--   We started with PCA to explore
+-   We explored the heart dataset using PCA
 -   PCA showed that there were sub-populations among the subjects
 -   The separation between the two sub-populations was due to PC1
 -   PCA indicated that `oldpeak` was a major contributor to PC1
