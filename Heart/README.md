@@ -32,6 +32,10 @@ Donors: The data was collected from the Cleveland Clinic Foundation
 
 Data: [https://archive.ics.uci.edu/ml/datasets/Heart+Disease](https://archive.ics.uci.edu/ml/datasets/Heart+Disease)
 
+## Table
+
+The table can be browsed [here](Heart.tsv) and downloaded from [here](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Heart/Heart.tsv)
+
 ## Analyses
 
 - [PCA](PCA.md)
