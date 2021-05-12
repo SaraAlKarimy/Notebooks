@@ -8,10 +8,8 @@ license: by-sa
 "They have just found the gene for shyness. They would have found it earlier, but it was hiding behind two other genes." --[Stuart Peirson](https://www.ndcn.ox.ac.uk/team/stuart-peirson)
 
 ```{r libraries, echo=FALSE, message=FALSE, warning=FALSE}
-library(readr)
+library(tidyverse)
 library(printr)
-library(dplyr)
-library(ggplot2)
 library(cowplot)
 ```
 
@@ -279,7 +277,8 @@ points(-log10(pvalue[filter_combined]) ~ fold[filter_combined],
 ## Exercise
 On the volcano  plot, highlight the up-regulated genes in red and the download-regulated genes in blue
 
-## Solution
+<details>
+  <summary>Click here for the solution</summary>
 
 - Up-regulated genes
 ```{r}
@@ -312,6 +311,8 @@ plot(-log10(pvalue) ~ fold)
 points(-log10(pvalue[filter_up]) ~ fold[filter_up], col = "red")
 points(-log10(pvalue[filter_down]) ~ fold[filter_down], col = "blue")
 ```
+
+</details>
 
 ## Heatmap
 ```{r}

@@ -393,7 +393,10 @@ points(-log10(pvalue[filter_combined]) ~ fold[filter_combined],
 On the volcano plot, highlight the up-regulated genes in red and the
 download-regulated genes in blue
 
-## Solution
+<details>
+<summary>
+Click here for the solution
+</summary>
 
 -   Up-regulated genes
 
@@ -440,6 +443,8 @@ points(-log10(pvalue[filter_down]) ~ fold[filter_down], col = "blue")
 ```
 
 ![](Irf6_files/figure-gfm/unnamed-chunk-32-1.png)<!-- -->
+
+</details>
 
 ## Heatmap
 
