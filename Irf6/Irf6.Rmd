@@ -19,7 +19,7 @@ First, we are going to load the dataset from the `.tsv` file into `R` as a varia
 
 **Note:** `.tsv` stands for [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values), which is simply a plain text file. The file itself can downloaded from [here](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/Irf6.tsv).
 
-In the following code, `data` is just an arbitrary **variable** name to hold the result of `read.table` and it can be called (or named) [*almost* anything](https://www.datamentor.io/r-programming/variable-constant/).
+In the following code, `data` is just an arbitrary **variable** name to hold the result of `read.table` and it can be called (or named) [*almost* anything](https://www.datamentor.io/r-programming/variable-constant/). Read here also on [Good Variable Names](https://wiki.c2.com/?GoodVariableNames).
 
 
 ```{r}

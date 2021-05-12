@@ -16,6 +16,8 @@ In the following code, `data` is just an arbitrary **variable** name to
 hold the result of `read.table` and it can be called (or named)
 [*almost*
 anything](https://www.datamentor.io/r-programming/variable-constant/).
+Read here also on [Good Variable
+Names](https://wiki.c2.com/?GoodVariableNames).
 
 ``` r
 # Load the data from a file into a variable
