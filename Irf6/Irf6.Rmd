@@ -16,8 +16,11 @@ library(cowplot)
 ## Loading
 
 First, we are going to load the dataset from the `.tsv` file into `R` as a variable called `data` using the [`read.table`](http://www.inside-r.org/r-doc/utils/read.table) function.
-<br>
-`data` is just an arbitrary **variable** name to hold the result of `read.table` and it can be called/named *almost* anything.
+
+**Note:** `.tsv` stands for [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values), which is simply a plain text file. The file itself can downloaded from [here](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/Irf6.tsv).
+
+In the following code, `data` is just an arbitrary **variable** name to hold the result of `read.table` and it can be called (or named) [*almost* anything](https://www.datamentor.io/r-programming/variable-constant/).
+
 
 ```{r}
 # Load the data from a file into a variable
@@ -175,11 +178,7 @@ plot_grid(p1, p2, labels = c("a", "b"))
 
 ## *t*-test
 
-Let's say there are two samples *x* and *y* from the two populations, *X* and *Y*, respectively, to determine whether the means of two populations are significantly different, we can use `t.test`.
-
-```{r}
-?t.test
-```
+Let's say there are two samples *x* and *y* from the two populations, *X* and *Y*, respectively, to determine whether the means of two populations are significantly different, we can use [`t.test`](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test).
 
 ## *t*-test : Example 1
 
@@ -366,7 +365,7 @@ boxplot(irf6[1:3], irf6[4:6], col = c("navy", "orange"), names = c("KO", "WT"), 
 ```
 
 ## Multiple Testing Correction
-We conducted `r n` statistical tests. The computed *p*-values need to be corrected for *multiple testing*. The correction can be performed using `p.adjust`, which simply takes the orignial *p*-values a vector and returns the adjusted (corrected) *p*-values:
+We conducted `r number_of_genes` statistical tests. The computed *p*-values need to be corrected for *multiple testing*. The correction can be performed using `p.adjust`, which simply takes the original *p*-values a vector and returns the adjusted (corrected) *p*-values using the [False Discovery Rate](https://en.wikipedia.org/wiki/False_discovery_rate) adjustment method:
 
 ```{r}
 adjusted.pvalues = p.adjust(pvalue, method = "fdr")
@@ -381,12 +380,31 @@ df = tibble(pvalue = pvalue, adjusted.pvalue = adjusted.pvalues)
 head(df)
 ```
 
+The relationship between the original and the adjusted p-values
+
 ```{r echo=FALSE}
-p = ggplot(df)
-p = p + geom_histogram(aes(x = -log10(pvalue)), bins = 1000, alpha = 0.5, fill = "red")
-p = p + geom_histogram(aes(x = -log10(adjusted.pvalues)), bins = 1000, alpha = 0.5, fill = "blue")
-print(p)
+
+ggplot(df) +
+  geom_jitter(aes(x = -log10(pvalue), y = -log10(adjusted.pvalue))) +
+  theme_light()
 ```
+
+The distribution of the original and the adjusted p-values
+
+```{r echo=FALSE}
+
+df1 = df %>% mutate (value = pvalue, type = "Original")
+df2 = df %>% mutate (value = adjusted.pvalue, type = "Adjusted" )
+df3 = df1 %>% bind_rows(df2)
+
+ggplot(df3) +
+  geom_density(aes(x = -log10(value), fill = type), alpha = 0.5) +
+  labs(x = "-log10(p-value)", y = "Density", fill = "") +
+  theme_light() +
+  theme(legend.position = c(0.9, 0.85))
+```
+
+**Note:** Strictly speaking, we *should* have performed all p-value-based analyses (filtering and downstream steps) based on the adjusted p-values.
 
 ## Homework
 - Identify the top 10 *biologically* significant genes (i.e., by fold-change)

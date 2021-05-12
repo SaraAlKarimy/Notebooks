@@ -6,8 +6,16 @@ Microarray Gene Expression Analysis with R
 First, we are going to load the dataset from the `.tsv` file into `R` as
 a variable called `data` using the
 [`read.table`](http://www.inside-r.org/r-doc/utils/read.table) function.
-<br> `data` is just an arbitrary **variable** name to hold the result of
-`read.table` and it can be called/named *almost* anything.
+
+**Note:** `.tsv` stands for [tab-separated
+values](https://en.wikipedia.org/wiki/Tab-separated_values), which is
+simply a plain text file. The file itself can downloaded from
+[here](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/Irf6.tsv).
+
+In the following code, `data` is just an arbitrary **variable** name to
+hold the result of `read.table` and it can be called (or named)
+[*almost*
+anything](https://www.datamentor.io/r-programming/variable-constant/).
 
 ``` r
 # Load the data from a file into a variable
@@ -224,146 +232,8 @@ hist(fold, col = "gray") # Histogram of the fold
 
 Let’s say there are two samples *x* and *y* from the two populations,
 *X* and *Y*, respectively, to determine whether the means of two
-populations are significantly different, we can use `t.test`.
-
-``` r
-?t.test
-```
-
-    ## Student's t-Test
-    ## 
-    ## Description:
-    ## 
-    ##      Performs one and two sample t-tests on vectors of data.
-    ## 
-    ## Usage:
-    ## 
-    ##      t.test(x, ...)
-    ##      
-    ##      ## Default S3 method:
-    ##      t.test(x, y = NULL,
-    ##             alternative = c("two.sided", "less", "greater"),
-    ##             mu = 0, paired = FALSE, var.equal = FALSE,
-    ##             conf.level = 0.95, ...)
-    ##      
-    ##      ## S3 method for class 'formula'
-    ##      t.test(formula, data, subset, na.action, ...)
-    ##      
-    ## Arguments:
-    ## 
-    ##        x: a (non-empty) numeric vector of data values.
-    ## 
-    ##        y: an optional (non-empty) numeric vector of data values.
-    ## 
-    ## alternative: a character string specifying the alternative hypothesis,
-    ##           must be one of '"two.sided"' (default), '"greater"' or
-    ##           '"less"'.  You can specify just the initial letter.
-    ## 
-    ##       mu: a number indicating the true value of the mean (or difference
-    ##           in means if you are performing a two sample test).
-    ## 
-    ##   paired: a logical indicating whether you want a paired t-test.
-    ## 
-    ## var.equal: a logical variable indicating whether to treat the two
-    ##           variances as being equal. If 'TRUE' then the pooled variance
-    ##           is used to estimate the variance otherwise the Welch (or
-    ##           Satterthwaite) approximation to the degrees of freedom is
-    ##           used.
-    ## 
-    ## conf.level: confidence level of the interval.
-    ## 
-    ##  formula: a formula of the form 'lhs ~ rhs' where 'lhs' is a numeric
-    ##           variable giving the data values and 'rhs' either '1' for a
-    ##           one-sample or paired test or a factor with two levels giving
-    ##           the corresponding groups. If 'lhs' is of class '"Pair"' and
-    ##           'rhs' is '1', a paired test is done
-    ## 
-    ##     data: an optional matrix or data frame (or similar: see
-    ##           'model.frame') containing the variables in the formula
-    ##           'formula'.  By default the variables are taken from
-    ##           'environment(formula)'.
-    ## 
-    ##   subset: an optional vector specifying a subset of observations to be
-    ##           used.
-    ## 
-    ## na.action: a function which indicates what should happen when the data
-    ##           contain 'NA's.  Defaults to 'getOption("na.action")'.
-    ## 
-    ##      ...: further arguments to be passed to or from methods.
-    ## 
-    ## Details:
-    ## 
-    ##      'alternative = "greater"' is the alternative that 'x' has a larger
-    ##      mean than 'y'. For the one-sample case: that the mean is positive.
-    ## 
-    ##      If 'paired' is 'TRUE' then both 'x' and 'y' must be specified and
-    ##      they must be the same length.  Missing values are silently removed
-    ##      (in pairs if 'paired' is 'TRUE').  If 'var.equal' is 'TRUE' then
-    ##      the pooled estimate of the variance is used.  By default, if
-    ##      'var.equal' is 'FALSE' then the variance is estimated separately
-    ##      for both groups and the Welch modification to the degrees of
-    ##      freedom is used.
-    ## 
-    ##      If the input data are effectively constant (compared to the larger
-    ##      of the two means) an error is generated.
-    ## 
-    ## Value:
-    ## 
-    ##      A list with class '"htest"' containing the following components:
-    ## 
-    ## statistic: the value of the t-statistic.
-    ## 
-    ## parameter: the degrees of freedom for the t-statistic.
-    ## 
-    ##  p.value: the p-value for the test.
-    ## 
-    ## conf.int: a confidence interval for the mean appropriate to the
-    ##           specified alternative hypothesis.
-    ## 
-    ## estimate: the estimated mean or difference in means depending on
-    ##           whether it was a one-sample test or a two-sample test.
-    ## 
-    ## null.value: the specified hypothesized value of the mean or mean
-    ##           difference depending on whether it was a one-sample test or a
-    ##           two-sample test.
-    ## 
-    ##   stderr: the standard error of the mean (difference), used as
-    ##           denominator in the t-statistic formula.
-    ## 
-    ## alternative: a character string describing the alternative hypothesis.
-    ## 
-    ##   method: a character string indicating what type of t-test was
-    ##           performed.
-    ## 
-    ## data.name: a character string giving the name(s) of the data.
-    ## 
-    ## See Also:
-    ## 
-    ##      'prop.test'
-    ## 
-    ## Examples:
-    ## 
-    ##      require(graphics)
-    ##      
-    ##      t.test(1:10, y = c(7:20))      # P = .00001855
-    ##      t.test(1:10, y = c(7:20, 200)) # P = .1245    -- NOT significant anymore
-    ##      
-    ##      ## Classical example: Student's sleep data
-    ##      plot(extra ~ group, data = sleep)
-    ##      ## Traditional interface
-    ##      with(sleep, t.test(extra[group == 1], extra[group == 2]))
-    ##      
-    ##      ## Formula interface
-    ##      t.test(extra ~ group, data = sleep)
-    ##      
-    ##      ## Formula interface to one-sample test
-    ##      t.test(extra ~ 1, data = sleep)
-    ##      
-    ##      ## Formula interface to paired test
-    ##      ## The sleep data are actually paired, so could have been in wide format:
-    ##      sleep2 <- reshape(sleep, direction = "wide", 
-    ##                        idvar = "ID", timevar = "group")
-    ##      t.test(Pair(extra.1, extra.2) ~ 1, data = sleep2)
+populations are significantly different, we can use
+[`t.test`](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/t.test).
 
 ## *t*-test : Example 1
 
@@ -436,7 +306,7 @@ head(pvalue)
 hist(-log10(pvalue), col = "gray") # Histogram of p-values (-log10)
 ```
 
-![](Irf6_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
+![](Irf6_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
 
 ## Volcano
 
@@ -444,7 +314,7 @@ hist(-log10(pvalue), col = "gray") # Histogram of p-values (-log10)
 plot(-log10(pvalue) ~ fold)
 ```
 
-![](Irf6_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+![](Irf6_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
 
 ``` r
 fold_cutoff = 2
@@ -457,7 +327,7 @@ abline(v = -fold_cutoff, col = "red", lwd = 3)
 abline(h = -log10(pvalue_cutoff), col = "green", lwd = 3)
 ```
 
-![](Irf6_files/figure-gfm/unnamed-chunk-25-1.png)<!-- -->
+![](Irf6_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
 
 ## Filtering for DEGs
 
@@ -508,7 +378,7 @@ points(-log10(pvalue[filter_combined]) ~ fold[filter_combined],
        col = "green")
 ```
 
-![](Irf6_files/figure-gfm/unnamed-chunk-28-1.png)<!-- -->
+![](Irf6_files/figure-gfm/unnamed-chunk-27-1.png)<!-- -->
 
 ## Exercise
 
@@ -561,7 +431,7 @@ points(-log10(pvalue[filter_up]) ~ fold[filter_up], col = "red")
 points(-log10(pvalue[filter_down]) ~ fold[filter_down], col = "blue")
 ```
 
-![](Irf6_files/figure-gfm/unnamed-chunk-33-1.png)<!-- -->
+![](Irf6_files/figure-gfm/unnamed-chunk-32-1.png)<!-- -->
 
 ## Heatmap
 
@@ -569,7 +439,7 @@ points(-log10(pvalue[filter_down]) ~ fold[filter_down], col = "blue")
 heatmap(filtered)
 ```
 
-![](Irf6_files/figure-gfm/unnamed-chunk-34-1.png)<!-- -->
+![](Irf6_files/figure-gfm/unnamed-chunk-33-1.png)<!-- -->
 
 -   By default, `heatmap` clusters genes (rows) and samples (columns)
     based on [the Euclidean
@@ -599,14 +469,14 @@ row_dendrogram = as.dendrogram(hclust(as.dist(1-cor(t(filtered)))))
 heatmap(filtered, Rowv=row_dendrogram, Colv=col_dendrogram)
 ```
 
-![](Irf6_files/figure-gfm/unnamed-chunk-36-1.png)<!-- -->
+![](Irf6_files/figure-gfm/unnamed-chunk-35-1.png)<!-- -->
 
 ``` r
 library(gplots) # Load the gplots library
 heatmap(filtered, Rowv=row_dendrogram, Colv=col_dendrogram, col = rev(redgreen(1024)))
 ```
 
-![](Irf6_files/figure-gfm/unnamed-chunk-38-1.png)<!-- -->
+![](Irf6_files/figure-gfm/unnamed-chunk-37-1.png)<!-- -->
 
 ## Annnotation
 
@@ -632,14 +502,16 @@ head(filterd_ids)
 ![Down Regulation of
 Irf6](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/images/irf6_down.png)
 
-<img src="Irf6_files/figure-gfm/unnamed-chunk-40-1.png" style="display: block; margin: auto;" />
+<img src="Irf6_files/figure-gfm/unnamed-chunk-39-1.png" style="display: block; margin: auto;" />
 
 ## Multiple Testing Correction
 
-We conducted 10^{6} statistical tests. The computed *p*-values need to
-be corrected for *multiple testing*. The correction can be performed
-using `p.adjust`, which simply takes the orignial *p*-values a vector
-and returns the adjusted (corrected) *p*-values:
+We conducted 45101 statistical tests. The computed *p*-values need to be
+corrected for *multiple testing*. The correction can be performed using
+`p.adjust`, which simply takes the original *p*-values a vector and
+returns the adjusted (corrected) *p*-values using the [False Discovery
+Rate](https://en.wikipedia.org/wiki/False_discovery_rate) adjustment
+method:
 
 ``` r
 adjusted.pvalues = p.adjust(pvalue, method = "fdr")
@@ -660,7 +532,17 @@ Here is an example of the original *p*-values and corresponding adjusted
 | 0.2623772 |       0.6967834 |
 | 0.0059478 |       0.2518079 |
 
+The relationship between the original and the adjusted p-values
+
+![](Irf6_files/figure-gfm/unnamed-chunk-42-1.png)<!-- -->
+
+The distribution of the original and the adjusted p-values
+
 ![](Irf6_files/figure-gfm/unnamed-chunk-43-1.png)<!-- -->
+
+**Note:** Strictly speaking, we *should* have performed all
+p-value-based analyses (filtering and downstream steps) based on the
+adjusted p-values.
 
 ## Homework
 
