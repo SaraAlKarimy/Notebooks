@@ -536,7 +536,7 @@ Here is an example of the original *p*-values and corresponding adjusted
 
 The relationship between the original and the adjusted p-values
 
-![](Irf6_files/figure-gfm/unnamed-chunk-42-1.png)<!-- -->
+![](Irf6_files/figure-gfm/original-vs-adjusted-1.png)<!-- -->
 
 **Note:** Strictly speaking, we *should* have performed all
 p-value-based analyses (filtering and downstream steps) based on the

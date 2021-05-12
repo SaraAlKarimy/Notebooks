@@ -382,7 +382,7 @@ head(df)
 
 The relationship between the original and the adjusted p-values
 
-```{r echo=FALSE}
+```{r original-vs-adjusted, echo=FALSE}
 p = ggplot(df) + geom_jitter(aes(x = -log10(pvalue), y = -log10(adjusted.pvalue))) + theme_light()
 ggExtra::ggMarginal(p, type = "density", fill = "black", alpha = 0.5)
 ```
