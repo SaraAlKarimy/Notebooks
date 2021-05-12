@@ -36,6 +36,12 @@ Using R analysis, answer the following questions:
 7. Write `R` code to generate the figure below. How would you interpret the figure?
 ![Generosity](https://github.com/ahmedmoustafa/Notebooks/blob/master/Happiness/generosity.png)
 
+8. Does the happiness `score` change significantly with the country `category`? Show visually and numerically. **Hint**: for the numerical part, start with the [`aov`](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/aov) function
+
+9. Which of the reported parameters has the most significant association with the `score`? **Hint**: exclude `country` and `category` from this part.
+
+10. Which of the reported parameters has the largest effect on the `score`? **Hint**: exclude `country` and `category` from this part.
+
 To start answering, copy [this notebook](Happiness.ipynb) into your Colaboratory on Google Drive. When you finish answering, share your notebook with amoustafa@aucegypt.edu and ahmedadelaboushanab@aucegypt.edu
 
 Good luck :star2:
