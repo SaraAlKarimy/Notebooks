@@ -233,7 +233,6 @@ hist(fold, col = "gray") # Histogram of the fold
     [*t*-test](http://en.wikipedia.org/wiki/Student%27s_t-test).
 
 ![](Irf6_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
-<img style="float: right;" src="https://imgs.xkcd.com/comics/p_values_2x.png" width="200px">
 
 ## *t*-test
 
@@ -308,6 +307,8 @@ head(pvalue)
 ```
 
     ## [1] 0.092706280 0.182663337 0.129779075 0.272899180 0.262377176 0.005947807
+
+<img style="float: right;" src="https://imgs.xkcd.com/comics/p_values_2x.png" width="200px">
 
 ``` r
 hist(-log10(pvalue), col = "gray") # Histogram of p-values (-log10)
