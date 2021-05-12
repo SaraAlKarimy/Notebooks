@@ -1,6 +1,10 @@
 Microarray Gene Expression Analysis with R
 ================
 
+“They have just found the gene for shyness. They would have found it
+earlier, but it was hiding behind two other genes.” –[Stuart
+Peirson](https://www.ndcn.ox.ac.uk/team/stuart-peirson)
+
 ## Loading
 
 First, we are going to load the dataset from the `.tsv` file into `R` as
@@ -229,6 +233,7 @@ hist(fold, col = "gray") # Histogram of the fold
     [*t*-test](http://en.wikipedia.org/wiki/Student%27s_t-test).
 
 ![](Irf6_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+<img style="float: right;" src="https://imgs.xkcd.com/comics/p_values_2x.png" width="200px">
 
 ## *t*-test
 
@@ -519,11 +524,11 @@ method:
 adjusted.pvalues = p.adjust(pvalue, method = "fdr")
 ```
 
-Number **original** *p*-values ≤ 0.05 = 5099 while the number
-**adjusted** (**corrected**) *p*-values &lt; 0.05 ≥ 9
+The number of the **original** *p*-values ≤ 0.05 is 5099 while the
+number of **adjusted** *p*-values ≤ 0.05 is 9.
 
-Here is an example of the original *p*-values and corresponding adjusted
-*p*-values:
+Here is a sample of the original *p*-values and their corresponding
+adjusted *p*-values:
 
 |    pvalue | adjusted.pvalue |
 |----------:|----------------:|
@@ -534,7 +539,8 @@ Here is an example of the original *p*-values and corresponding adjusted
 | 0.2623772 |       0.6967834 |
 | 0.0059478 |       0.2518079 |
 
-The relationship between the original and the adjusted p-values
+And here is the overall relationship between the original and the
+adjusted p-values:
 
 ![](Irf6_files/figure-gfm/original-vs-adjusted-1.png)<!-- -->
 
