@@ -225,6 +225,8 @@ hist(fold, col = "gray") # Histogram of the fold
 
 ![](Irf6_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
+<img style="float: right;" src="https://imgs.xkcd.com/comics/p_values_2x.png" width="250px">
+
 ## Statistical Significance (*p*-value)
 
 -   To assess the statistical significance of the difference in the
@@ -541,14 +543,11 @@ adjusted *p*-values:
 And here is the overall relationship between the original and the
 adjusted p-values:
 
-![](Irf6_files/figure-gfm/original-vs-adjusted-1.png)<!-- -->
-<img style="float: right;" src="https://imgs.xkcd.com/comics/p_values_2x.png" width="200px">
-
-**Note:** Strictly speaking, we *should* have performed all
-p-value-based analyses (filtering and downstream steps) based on the
-adjusted p-values, but for the sake of simplicity, we proceeded with the
-original p-values instead of the adjusted p-values –formally, do **NOT**
-do that.
+![](Irf6_files/figure-gfm/original-vs-adjusted-1.png)<!-- --> **Note:**
+Strictly speaking, we *should* have performed all p-value-based analyses
+(filtering and downstream steps) based on the adjusted p-values, but for
+the sake of simplicity, we proceeded with the original p-values instead
+of the adjusted p-values –formally, do **NOT** do that.
 
 ## Homework
 
