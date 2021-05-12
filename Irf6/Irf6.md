@@ -536,13 +536,11 @@ The relationship between the original and the adjusted p-values
 
 ![](Irf6_files/figure-gfm/unnamed-chunk-42-1.png)<!-- -->
 
-The distribution of the original and the adjusted p-values
-
-![](Irf6_files/figure-gfm/unnamed-chunk-43-1.png)<!-- -->
-
 **Note:** Strictly speaking, we *should* have performed all
 p-value-based analyses (filtering and downstream steps) based on the
-adjusted p-values.
+adjusted p-values, but for the sake of simplicity, we proceeded with the
+original p-values instead of the adjusted p-values –formally, do **NOT**
+do that.
 
 ## Homework
 
