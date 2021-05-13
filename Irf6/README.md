@@ -48,7 +48,7 @@ Research](https://www.mayoclinic.org/diseases-conditions/cleft-palate/symptoms-c
 
 ## Genetics
 
-<a href="https://swissmodel.expasy.org/repository/uniprot/O14896" title="SWISS-MODEL Protein Structure of IRF6"><img style="float: right;" src="images/structure.png" width="300px" title="SWISS-MODEL Protein Structure of IRF6"></a>
+<a href="https://swissmodel.expasy.org/repository/uniprot/O14896" title="SWISS-MODEL Protein Structure of IRF6"><img align="right" src="images/structure.png" width="300px" title="SWISS-MODEL Protein Structure of IRF6"></a>
 
 -   DNA variation in [Interferon Regulatory Factor
     6](https://en.wikipedia.org/wiki/IRF6)
@@ -108,7 +108,7 @@ identify genes that are regulated (targeted) by **Irf6**.
 
 ![](images/one-does-not-simply.jpg)
 
-<img style="float: right;" src="images/chip.jpg" width="300px" title="Microarray Chip">
+<img align="right" src="images/chip.jpg" width="300px" title="Microarray Chip">
 
 -   No need for candidate genes (or genes of interest)
 
@@ -126,7 +126,7 @@ identify genes that are regulated (targeted) by **Irf6**.
 
 ## Experimental Design
 
-<img style="float: right;" src="images/mice.png" width="300px" title="Mice Phenotypes">
+<img align="right" src="images/mice.png" width="300px" title="Mice Phenotypes">
 
 -   3 IRF6 wild-type (+/+) and 3 knockout (-/-) mouse embryos.
 -   E17.5 embryos were removed from euthanized mothers.

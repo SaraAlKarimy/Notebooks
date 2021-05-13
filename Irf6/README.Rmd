@@ -46,7 +46,7 @@ Children with cleft lip with or without cleft palate face a variety of challenge
 
 ## Genetics
 
-<a href="https://swissmodel.expasy.org/repository/uniprot/O14896" title="SWISS-MODEL Protein Structure of IRF6"><img style="float: right;" src="images/structure.png" width="300px" title="SWISS-MODEL Protein Structure of IRF6"></a>
+<a href="https://swissmodel.expasy.org/repository/uniprot/O14896" title="SWISS-MODEL Protein Structure of IRF6"><img align="right" src="images/structure.png" width="300px" title="SWISS-MODEL Protein Structure of IRF6"></a>
 
 - DNA variation in [Interferon Regulatory Factor 6](https://en.wikipedia.org/wiki/IRF6) ([**IRF6**](https://en.wikipedia.org/wiki/IRF6)) causes [Van der Woude syndrome](https://en.wikipedia.org/wiki/Van_der_Woude_syndrome) ([**VWS**](https://en.wikipedia.org/wiki/Van_der_Woude_syndrome))
 
@@ -134,7 +134,7 @@ plot_grid(p1, p2, p3, labels = c("a", "b", "c"), ncol = 3)
 ![](images/one-does-not-simply.jpg)
 
 
-<img style="float: right;" src="images/chip.jpg" width="300px" title="Microarray Chip">
+<img align="right" src="images/chip.jpg" width="300px" title="Microarray Chip">
 
 - No need for candidate genes (or genes of interest)
 
@@ -153,7 +153,7 @@ plot_grid(p1, p2, p3, labels = c("a", "b", "c"), ncol = 3)
 
 ## Experimental Design
 
-<img style="float: right;" src="images/mice.png" width="300px" title="Mice Phenotypes">
+<img align="right" src="images/mice.png" width="300px" title="Mice Phenotypes">
 
 - 3 IRF6 wild-type (+/+) and 3 knockout (-/-) mouse embryos.
 - E17.5 embryos were removed from euthanized mothers.
