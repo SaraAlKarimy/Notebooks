@@ -17,7 +17,7 @@ protein](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/i
 
 # Cleft Lip and Palate
 
-<img style="float: right;" src="images/cleft.jpg" width="300px" title="Cleft Lip and Palate">
+<img align="right" src="images/cleft.jpg" width="300px" title="Cleft Lip and Palate">
 
 Cleft lip and cleft palate (**CLP**) are splits in the upper lip, the
 roof of the mouth (palate) or both. They result when facial structures
