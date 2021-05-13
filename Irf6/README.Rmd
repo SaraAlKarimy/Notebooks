@@ -47,7 +47,7 @@ Children with cleft lip with or without cleft palate face a variety of challenge
 
 ## Genetics
 
-- DNA variation in Interferon Regulatory Factor 6 (**IRF6**) causes Van der Woude syndrome (**VWS**)
+- DNA variation in Interferon Regulatory Factor 6 (**IRF6**) causes [Van der Woude syndrome](https://en.wikipedia.org/wiki/Van_der_Woude_syndrome) ([**VWS**](https://en.wikipedia.org/wiki/Van_der_Woude_syndrome))
 
 - VWS is the most common syndromic form of cleft lip and palate.
 
@@ -71,15 +71,18 @@ How can we identify other genes that might be involved in the remaining 30% of t
 
 - Usually, genes regulated by the same transcription factor belong to the same biological process or pathway.
 
-- Therefore, by comparing the gene expression patterns between wild-type (functional) *Irf6* and knockout (non-functional) *Irf6*, it could be possible to identify genes that are regulated (targeted) by *Irf6*.
+<details>
+  <summary<Click here for the answer</summary>
+By comparing the gene expression patterns between wild-type (functional) *Irf6* and knockout (non-functional) *Irf6*, it could be possible to identify genes that are regulated (targeted) by *Irf6*.
+</details>
 
 ## Hypothesis
 
-- $ H_O : \mu_{WT} = \mu_{KO} $
+- \(H_O : \mu_{WT} = \mu_{KO}\)
 
-- $ H_A : \mu_{WT} \ne \mu_{KO} $
+- \(H_A : \mu_{WT} \ne \mu_{KO}\)
 
-- Where $ \mu\ $ is the *mean* of the gene expression values of a gene.
+- Where \(\mu\) is the *mean* of the gene expression values of a gene.
 
 - **One**-sided or **Two**-sided testing?
 

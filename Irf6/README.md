@@ -87,11 +87,11 @@ How can we identify other genes that might be involved in the remaining
 
 ## Hypothesis
 
--   $ H\_O : *{WT} = *{KO} $
+-   *H*<sub>*O*</sub> : *μ*<sub>*W**T*</sub> = *μ*<sub>*K**O*</sub>
 
--   $ H\_A : *{WT} *{KO} $
+-   *H*<sub>*A*</sub> : *μ*<sub>*W**T*</sub> ≠ *μ*<sub>*K**O*</sub>
 
--   Where $  $ is the *mean* of the gene expression values of a gene.
+-   Where *μ* is the *mean* of the gene expression values of a gene.
 
 -   **One**-sided or **Two**-sided testing?
 
