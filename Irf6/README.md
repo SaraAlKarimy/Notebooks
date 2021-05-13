@@ -1,14 +1,14 @@
 Microarray Gene Expression Analysis with R
 ================
 
-![](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/images/title.png "Microarry Analysis with R")
-
 # Objectives
+
+<img style="float: right;" src="images/title.png" width="300px" title="Microarray Analysis with R">
 
 -   Load microarray dataset into R
 -   Explore the dataset with basic visualizations
 -   Identify differentially expressed genes (DEGs)
--   Generate annotation of the DEGs (*Tentative*)
+-   Generate annotation of the DEGs
 
 # The Central Dogma of Biology
 
@@ -17,14 +17,13 @@ protein](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/i
 
 # Cleft Lip and Palate
 
+<img style="float: right;" src="images/cleft.jpg" width="300px" title="Cleft Lip and Palate">
+
 Cleft lip and cleft palate (**CLP**) are splits in the upper lip, the
 roof of the mouth (palate) or both. They result when facial structures
 that are developing in an unborn baby do not close completely. CLP is
 one of the most common birth defects with a frequency of 1/700 live
 births.
-
-![Cleft lip and
-palate](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/images/cleft.jpg)
 
 ## Challgenes
 
@@ -49,8 +48,14 @@ Research](https://www.mayoclinic.org/diseases-conditions/cleft-palate/symptoms-c
 
 ## Genetics
 
--   DNA variation in Interferon Regulatory Factor 6 (**IRF6**) causes
-    Van der Woude syndrome (**VWS**)
+<a href="https://swissmodel.expasy.org/repository/uniprot/O14896" title="SWISS-MODEL Protein Structure of IRF6"><img style="float: right;" src="images/structure.png" width="300px" title="SWISS-MODEL Protein Structure of IRF6"></a>
+
+-   DNA variation in [Interferon Regulatory Factor
+    6](https://en.wikipedia.org/wiki/IRF6)
+    ([**IRF6**](https://en.wikipedia.org/wiki/IRF6)) causes [Van der
+    Woude
+    syndrome](https://en.wikipedia.org/wiki/Van_der_Woude_syndrome)
+    ([**VWS**](https://en.wikipedia.org/wiki/Van_der_Woude_syndrome))
 
 -   VWS is the most common syndromic form of cleft lip and palate.
 
@@ -75,15 +80,17 @@ Given:
 How can we identify other genes that might be involved in the remaining
 30% of the VWS families?
 
-## Hint
+**Hint:** Typically, genes regulated by the same transcription factor
+belong to the same biological process or pathway.
 
--   Usually, genes regulated by the same transcription factor belong to
-    the same biological process or pathway.
-
--   Therefore, by comparing the gene expression patterns between
-    wild-type (functional) *Irf6* and knockout (non-functional) *Irf6*,
-    it could be possible to identify genes that are regulated (targeted)
-    by *Irf6*.
+<details>
+<summary>
+Click here for the answer
+</summary>
+By comparing the gene expression patterns between wild-type (functional)
+**Irf6** and knockout (non-functional) **Irf6**, it will be possible to
+identify genes that are regulated (targeted) by **Irf6**.
+</details>
 
 ## Hypothesis
 
@@ -97,9 +104,11 @@ How can we identify other genes that might be involved in the remaining
 
 ![](README_files/figure-gfm/sides-1.png)<!-- -->
 
-## Why Microarray?
+# Why Microarray?
 
 ![](images/one-does-not-simply.jpg)
+
+<img style="float: right;" src="images/chip.jpg" width="300px" title="Microarray Chip">
 
 -   No need for candidate genes (or genes of interest)
 
@@ -109,22 +118,24 @@ How can we identify other genes that might be involved in the remaining
 
 -   Only small amount of RNA is required (\~15–200 ng)
 
-![](images/chip.jpg)
+# Original Paper
 
-## Original Paper
+[PMID: 17041601](https://pubmed.ncbi.nlm.nih.gov/17041601/)
 
 ![PMID: 17041601](images/pmid17041601.png)
 
 ## Experimental Design
 
+<img style="float: right;" src="images/mice.png" width="300px" title="Mice Phenotypes">
+
 -   3 IRF6 wild-type (+/+) and 3 knockout (-/-) mouse embryos.
 -   E17.5 embryos were removed from euthanized mothers.
 -   Skin was removed from embryos.
 -   Total RNA was isolated from the skin.
--   Resultant RNA was hybridized to Affymetrix GeneChip Mouse Genome 430
-    2.0 arrays.
-
-![](images/mice.png)
+-   Resultant RNA was hybridized to [Affymetrix GeneChip Mouse Genome
+    430
+    2.0](https://www.thermofisher.com/order/catalog/product/900497#/900497)
+    arrays.
 
 ## Dataset
 
