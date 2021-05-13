@@ -17,10 +17,9 @@ simply a plain text file. The file itself can downloaded from
 [here](https://raw.githubusercontent.com/ahmedmoustafa/Notebooks/master/Irf6/Irf6.tsv).
 
 In the following code, `data` is just an arbitrary **variable** name to
-hold the result of `read.table` and it can be called (or named)
-[*almost*
-anything](https://www.datamentor.io/r-programming/variable-constant/).
-Read here also on [Good Variable
+hold the result of `read.table`. See here for [**valid** variable
+names](https://www.datamentor.io/r-programming/variable-constant/) in
+**R**. Also it is recommended to see here for generally [Good Variable
 Names](https://wiki.c2.com/?GoodVariableNames).
 
 ``` r
@@ -32,8 +31,8 @@ data = as.matrix(data)
 ```
 
 **Note:** the hash sign (`#`) indicates that what comes after is a
-*comment*. Comments are for documentation and readability of the `R`
-code and they are not evaluated (or executed).
+*comment*. Comments are for documentation and readability of the code
+and they are not evaluated (or executed).
 
 ## Checking
 
@@ -103,7 +102,7 @@ boxplot(data2, col = colors)
 
 ![](Irf6_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-## Clustering 1/2
+## Clustering
 
 Hierarchical clustering of the **samples** (i.e., columns) based on the
 [correlation
@@ -119,7 +118,7 @@ plot(hc)
 
 To learn more about a function (e.g., `hclust`), you may type
 `?function` (e.g., `?hclust`) in the `console` to launch `R`
-documentation on that function:
+documentation on that function.
 
 ## Splitting Data Matrix into two tables
 
@@ -190,9 +189,9 @@ pairs(data2) # All pairwise comparisons
 
 ![](Irf6_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
 
-## Differentially Expressed Genes (DEGs)
+# Differential Gene Expression Analysis
 
-To identify DEGs, we will identify:
+To identify Differentially Expressed Genes (DEGs), we will identify:
 
 -   **Biologically** significantly differentially expressed
 -   **Statistically** significantly differentially expressed
@@ -551,10 +550,10 @@ adjusted p-values:
 ![](Irf6_files/figure-gfm/original-vs-adjusted-1.png)<!-- -->
 
 **Note:** Strictly speaking, we *should* have performed all
-p-value-based analyses (filtering and downstream steps) based on the
-adjusted p-values, but for the sake of simplicity, we proceeded with the
-original p-values instead of the adjusted p-values –formally, do **NOT**
-do that.
+*p*-value-based analyses (filtering and downstream steps) based on the
+adjusted *p*-values, but for the sake of simplicity, we proceeded with
+the original *p*-values instead of the adjusted *p*-values –formally, do
+**NOT** do that.
 
 ## Homework
 

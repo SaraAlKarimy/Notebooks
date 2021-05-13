@@ -77,8 +77,8 @@ How can we identify other genes that might be involved in the remaining
 
 ## Hint
 
--   Usually, genes that are regulated by a transcription factor belong
-    to the same biological process or pathway.
+-   Usually, genes regulated by the same transcription factor belong to
+    the same biological process or pathway.
 
 -   Therefore, by comparing the gene expression patterns between
     wild-type (functional) *Irf6* and knockout (non-functional) *Irf6*,
@@ -87,11 +87,11 @@ How can we identify other genes that might be involved in the remaining
 
 ## Hypothesis
 
--   *H*<sub>*O*</sub> : *μ*<sub>*W**T*</sub> = *μ*<sub>*K**O*</sub>
+-   $ H\_O : *{WT} = *{KO} $
 
--   *H*<sub>*A*</sub> : *μ*<sub>*W**T*</sub> ≠ *μ*<sub>*K**O*</sub>
+-   $ H\_A : *{WT} *{KO} $
 
--   Where *μ* is the *mean* of the gene expression values of a gene.
+-   Where $  $ is the *mean* of the gene expression values of a gene.
 
 -   **One**-sided or **Two**-sided testing?
 
