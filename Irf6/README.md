@@ -3,7 +3,7 @@ Microarray Gene Expression Analysis with R
 
 # Objectives
 
-<img style="float: right;" src="images/title.png" width="300px" title="Microarray Analysis with R">
+<img align="right" src="images/title.png" width="300px" title="Microarray Analysis with R">
 
 -   Load microarray dataset into R
 -   Explore the dataset with basic visualizations
