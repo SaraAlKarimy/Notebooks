@@ -126,7 +126,7 @@ identify genes that are regulated (targeted) by **Irf6**.
 
 ## Experimental Design
 
-<img align="right" src="images/mice.png" width="300px" title="Mice Phenotypes">
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2082114/figure/F1/" title="Genotypic and phenotypic analysis of mice deficient for Irf6"><img align="right" src="images/mice.png" width="300px" title="Phenotypic analysis of mice deficient for Irf6"></a>
 
 -   3 IRF6 wild-type (+/+) and 3 knockout (-/-) mouse embryos.
 -   E17.5 embryos were removed from euthanized mothers.
