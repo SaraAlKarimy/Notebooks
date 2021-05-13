@@ -191,14 +191,14 @@ pairs(data2) # All pairwise comparisons
 
 # Differential Gene Expression Analysis
 
+<img src="images/intersection.png" title="Intersection" align="right" width="300px">
+
 To identify Differentially Expressed Genes (DEGs), we will identify:
 
 -   **Biologically** significantly differentially expressed
 -   **Statistically** significantly differentially expressed
 
 Then, we will take the **overlap** (**intersection**) of the two sets
-
-![](images/intersection.png)
 
 ## Biological Significance (fold-change)
 
@@ -453,6 +453,8 @@ heatmap(filtered)
 
 ![](Irf6_files/figure-gfm/unnamed-chunk-33-1.png)<!-- -->
 
+<img src="images/guilt_by_association.jpg" title="Guilt by Association" align="right" width="300px">
+
 -   By default, `heatmap` clusters genes (rows) and samples (columns)
     based on [the Euclidean
     distance](http://en.wikipedia.org/wiki/Euclidean_distance).
@@ -473,8 +475,6 @@ col_dendrogram = as.dendrogram(hclust(as.dist(1-cor(filtered))))
 # Clustering of the rows (genes)
 row_dendrogram = as.dendrogram(hclust(as.dist(1-cor(t(filtered)))))
 ```
-
-![](images/guilt_by_association.jpg)
 
 ``` r
 # Heatmap with the rows and columns clustered by correlation coefficients
