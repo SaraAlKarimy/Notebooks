@@ -1,6 +1,6 @@
 # Cleveland Heart Disease Data
 
-![Heart Care](images/care.jpeg)
+![Heart](images/cardiogram.jpeg)
 
 ## Description
 
