@@ -1,5 +1,4 @@
 # Maternal Smoking and Birth Weight
----
 
 ![Maternal Smoking](images/smoking.jpeg)
 
